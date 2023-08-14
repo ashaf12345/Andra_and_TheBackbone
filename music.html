@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MUSIC</title>
+  <link rel="stylesheet" href="music.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+<body>
+  <div class="navbar">
+    <div>
+    <a href="index..html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="tour.html">TOUR</a>
+    <a href="music.html">MUSIC</a>
+    <a href="store.html">STORE</a>
+    <div class="image-container">
+      <img src="picture/test.jpeg" alt="image">
+      </div>
+    </div>
+  </div>
+  <div class="track">populer track</div>
+  <div class="container">
+    <div class="accordion">
+    <button class="lagu">Sempurna </button>
+    <div class="content">
+      <div>
+        <audio id="audioPlayer" controls>
+          <source src="track/sempirna.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <iframe src="liriksempurna.html"  frameborder="0"></iframe>
+    </div>
+    <button class="lagu">Hitamku </button>>
+    <div class="content">
+      <div>
+        <audio id="audioPlayer" controls>
+          <source src="track/hitamku.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <iframe src="lirikHitamku.html" frameborder="0"></iframe>
+    </div>
+    <button class="lagu">Hitamku </button>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <button class="lagu">Hitamku </button>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <button class="lagu">Hitamku </button>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <button class="lagu">Hitamku </button>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    </div>
+   
+   
+  </div>
+  <div class="link">
+    <a class="fa fa-youtube-play" href="https://www.youtube.com/channel/UCsn0KopJCEV7rMMZGi9bJIw" style="color: #FF0000;" target="_blank"></a>
+    <a class="fa" href="https://open.spotify.com/artist/4ucwey7FxkHXkLK7jSfevU" target="_blank" style="color: #1DB954;">&#xf1bc;</a>
+  </div>
+  <script>
+    var acc = document.getElementsByClassName("lagu");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    const audio = document.getElementById('audioPlayer');
+    const playButton = document.getElementById('playButton');
+    const pauseButton = document.getElementById('pauseButton');
+
+    playButton.addEventListener('click', () => {
+      audio.play();
+    });
+
+    pauseButton.addEventListener('click', () => {
+      audio.pause();
+    });
+  </script>
+</body>
+</html>

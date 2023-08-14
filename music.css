@@ -1,0 +1,125 @@
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: darkgray;
+    font-family: Nunito Sans, Nunito Sans;
+    
+  }
+  .navbar {
+    background-color: #000000;
+    overflow: hidden;
+    top: 0;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+  
+  /* Style the navbar links */
+  .navbar a {
+    float: left;
+    font-size: 20px;
+    display: block;
+    color: white;
+    text-align: center;
+    margin: 0 10px;
+    padding: 8px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .image-container {
+    display: block;
+    left: 540px;
+    top: 0vh;
+    position: absolute;
+  }
+  .container {
+    height: 70%;
+    width: 70%;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+    overflow: auto;
+    border-radius: 10px;
+    left: 15%;
+    top: 10%;
+  }
+  .track{
+    background-image: linear-gradient(to bottom, #FFFFFF, #444444);
+    position: absolute;
+    top: 13%;
+    left: 40%;
+    width: 20%;
+    height: 7%;
+    text-align: center;
+    font-size: 5vh;
+    border-radius: 10px;
+    z-index: 1;
+    border: 2px solid black;
+  }
+  .content {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-size: 3vh;
+  }
+  .content p{
+    font-size: 20px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: stretch; /* Stretch items to full container width */
+    height: 100vh; /* Full viewport height */
+  }
+
+  /* Ensure that the iframe fills the remaining space */
+  .content iframe {
+    flex: 1; /* Take up remaining available vertical space */
+    border: none;
+  }
+  button{
+    width: 50%;
+    text-align: left;
+    margin-left: 5px;
+    font-size: 5vh;
+    border: none;
+  }
+  .lagu:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  .link{
+  bottom: 5%;
+  width: 100%;
+  height: 5%;
+   position: absolute;
+   text-align: center;
+   font-size: 4vh;
+  }
+  .link a{
+  
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 7vh;
+    text-decoration: none;
+  }
+ 
+  
